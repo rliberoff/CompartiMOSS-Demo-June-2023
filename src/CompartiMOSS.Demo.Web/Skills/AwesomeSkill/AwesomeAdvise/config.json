@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "type": "completion",
+  "description": "Provides awesome advise for people",
+  "completion": {
+    "max_tokens": 2000,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0
+  },
+  "input": {
+    "parameters": [
+      {
+        "name": "input",
+        "description": "What people say or ask for awesome advise",
+        "defaultValue": ""
+      },
+      {
+        "name": "advices",
+        "description": "A set advices that could help providing a better response",
+        "defaultValue": ""
+      }
+    ]
+  }
+}
