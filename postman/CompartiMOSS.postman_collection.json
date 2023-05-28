@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "817618a9-4d58-4bc0-b1af-1624c8ce5c86",
+		"name": "CompartiMOSS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24498958"
+	},
+	"item": [
+		{
+			"name": "Process Advice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"input\": \"Don’t take shortcuts. Commit to a life of choosing long-term respect over short-term popularity. Do what you say you’re going to do when you say you’re going to do it.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/awesome/process",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"awesome",
+						"process"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Advice by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/awesome/advice/6cde912f-faf2-471d-8a63-d1c6735df45d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"awesome",
+						"advice",
+						"6cde912f-faf2-471d-8a63-d1c6735df45d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ask for Advice",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/awesome/advice/ask?question=Me siento irrelevante y que no logro cumplir mis metas o propósitos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"awesome",
+						"advice",
+						"ask"
+					],
+					"query": [
+						{
+							"key": "question",
+							"value": "Me siento irrelevante y que no logro cumplir mis metas o propósitos"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
